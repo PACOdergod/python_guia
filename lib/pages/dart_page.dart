@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(PythonPage());
+void main() => runApp(DartPage());
 
-class PythonPage extends StatelessWidget {
+class DartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.lightBlue[700],
-          title: Text('Python'),
+          backgroundColor: Colors.cyan[400],
+          title: Text('Dart'),
         ),
         body: _menu(context));
   }
