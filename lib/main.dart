@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:python_guia/pages/dart/variables_dart_page.dart';
 import 'package:python_guia/pages/dart_page.dart';
 import 'package:python_guia/pages/home_page.dart';
 import 'package:python_guia/pages/python/varibles_python_page.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         'python': (BuildContext context) => PythonPage(),
         'variablesPython': (BuildContext context) => VariablesPythonPage(),
         'dart': (BuildContext context) => DartPage(),
+        'variablesDart': (BuildContext context) => VariablesDartPage(),
       },
     );
   }

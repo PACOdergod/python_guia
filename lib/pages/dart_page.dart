@@ -17,17 +17,16 @@ class DartPage extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          _carta(context, 'variables', 'variablesPython'),
-          _carta(context, 'tipos', 'variablesPython'),
-          _carta(context, 'listas', 'variablesPython'),
-          _carta(context, 'tuplas', 'variablesPython'),
-          _carta(context, 'cadena', 'variablesPython'),
-          _carta(context, 'diccionarios', 'variablesPython'),
-          _carta(context, 'flujo', 'variablesPython'),
-          _carta(context, 'funciones', 'variablesPython'),
-          _carta(context, 'clases', 'variablesPython'),
-          _carta(context, 'modulos', 'variablesPython'),
-          _carta(context, 'extras', 'variablesPython'),
+          _carta(context, 'variables y tipos', 'variablesDart'),
+          _carta(context, 'listas', 'variablesDart'),
+          _carta(context, 'tuplas', 'variablesDart'),
+          _carta(context, 'cadena', 'variablesDart'),
+          _carta(context, 'diccionarios', 'variablesDart'),
+          _carta(context, 'flujo', 'variablesDart'),
+          _carta(context, 'funciones', 'variablesDart'),
+          _carta(context, 'clases', 'variablesDart'),
+          _carta(context, 'modulos', 'variablesDart'),
+          _carta(context, 'extras', 'variablesDart'),
           SizedBox(
             height: 20.0,
           )
@@ -40,11 +39,20 @@ class DartPage extends StatelessWidget {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
       margin: EdgeInsets.only(top: 15.0),
-      color: Colors.yellow[600],
+      color: Colors.blue[900],
       child: ListTile(
-        leading: Icon(Icons.ac_unit),
-        title: Text(seccion),
-        trailing: Icon(Icons.arrow_forward),
+        leading: Icon(
+          Icons.ac_unit,
+          color: Colors.white,
+        ),
+        title: Text(
+          seccion,
+          style: TextStyle(color: Colors.white, fontSize: 20.0),
+        ),
+        trailing: Icon(
+          Icons.arrow_forward,
+          color: Colors.white,
+        ),
         onTap: () {
           //print(seccion);
           Navigator.pushNamed(context, ruta);
